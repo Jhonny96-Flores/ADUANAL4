@@ -21,7 +21,7 @@ namespace Almacen.BL
 
         [Required(ErrorMessage = "Ingrese Descripcion")]
         [MinLength(2, ErrorMessage = "Ingrese minimo 2 caracter")]
-        [MaxLength(15, ErrorMessage = "Ingrese maximo 15 caracter")]
+        [MaxLength(30, ErrorMessage = "Ingrese maximo 30 caracter")]
         public string Descripcion { get; set; }
 
         [Required(ErrorMessage = "Ingrese Precio")]
