@@ -36,6 +36,7 @@ namespace ALMACEN.WebAdmin.Controllers
                 FormsAuthentication.SetAuthCookie(nombreUsuario, true);
                 return RedirectToAction("Index", "Home");
             }
+            ModelState.AddModelError("", "Usuario o Contraseña Invalido");
             return RedirectToAction("Index", "Home");
         }
     }
