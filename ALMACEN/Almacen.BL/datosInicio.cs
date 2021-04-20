@@ -35,14 +35,14 @@ namespace Almacen.BL
             /*Oscar*/
             var usuario4 = new usuario();
             usuario4.Nombre = "Oscar";
-            usuario4.Pass = Encriptar.CodificarContrasena("HolaMundo");
+            usuario4.Pass = Encriptar.CodificarContrasena("20152001504");
 
             contexto.usuario.Add(usuario4);
 
             /*Miler*/
             var usuario5 = new usuario();
             usuario5.Nombre = "Miler";
-            usuario5.Pass = Encriptar.CodificarContrasena("HolaMundo");
+            usuario5.Pass = Encriptar.CodificarContrasena("20152030014");
 
             contexto.usuario.Add(usuario4);
 
