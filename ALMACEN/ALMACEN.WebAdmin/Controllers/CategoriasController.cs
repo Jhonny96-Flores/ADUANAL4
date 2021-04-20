@@ -9,6 +9,7 @@ namespace ALMACEN.web.Controllers
 {
   
 
+    [Authorize]
     public class CategoriasController : Controller
     {
         CategoriasBL _categoriasBL;

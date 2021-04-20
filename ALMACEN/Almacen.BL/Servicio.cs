@@ -19,10 +19,15 @@ namespace Almacen.BL
 
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Ingrese Descripcion")]
+        [Required(ErrorMessage = "Ingrese el Servicio")]
         [MinLength(2, ErrorMessage = "Ingrese minimo 2 caracter")]
         [MaxLength(30, ErrorMessage = "Ingrese maximo 30 caracter")]
         public string Descripcion { get; set; }
+
+        [Required(ErrorMessage = "Ingrese Descripcion")]
+        [MaxLength(500, ErrorMessage = "Ingrese maximo 500  caracter")]
+        public string DetalleServicio { get; set; }
+
 
         [Required(ErrorMessage = "Ingrese Precio")]
         [Range(0, 1000, ErrorMessage = "Ingrese precio 0 y 1000")]

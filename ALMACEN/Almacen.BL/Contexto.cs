@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace Almacen.BL
 {
-    public class Contexto: DbContext
+    public class Contexto : DbContext
     {
-        public Contexto(): base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" 
-        + Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\ALMACENDB.mdf") 
-        {  
+        public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename="
+        + Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\ALMACENDB.mdf")
+        {
 
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer(new datosInicio());
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
@@ -29,6 +30,7 @@ namespace Almacen.BL
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<SolicitudAduana> SolicitudAduana { get; set; }
         public DbSet<DetalleSolicitud> DetalleSolicitud { get; set; }
+        public DbSet<usuario> usuario { get; set; }
 
 
     }

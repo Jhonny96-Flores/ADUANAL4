@@ -70,15 +70,19 @@ namespace Almacen.BL
             var servicio = _contexto.Servicios.Find(detalleSolicitud.ServicioId);
 
             detalleSolicitud.Precio = servicio.Precio;
-            if (detalleSolicitud.ServicioId == 2)
-            {
-                detalleSolicitud.Total = detalleSolicitud.Precio * detalleSolicitud.Cantidad * detalleSolicitud.Estadia;
+            detalleSolicitud.servicios = servicio.Descripcion;
+            
 
-            }
-            else
-            {
-                detalleSolicitud.Total = detalleSolicitud.Precio;
-            }
+             if (detalleSolicitud.servicios=="Almacen temporal")
+             {
+                 detalleSolicitud.Total = detalleSolicitud.Precio * detalleSolicitud.Cantidad * detalleSolicitud.Estadia;
+
+             }
+             else
+             {
+                 detalleSolicitud.Total = detalleSolicitud.Precio;
+             }
+
 
             var solicitud = _contexto.SolicitudAduana.Find(detalleSolicitud.SolicitudId);
 

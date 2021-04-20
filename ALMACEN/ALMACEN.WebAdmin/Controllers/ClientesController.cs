@@ -8,6 +8,7 @@ using System.Web.Mvc;
 //Quinto Avance
 namespace ALMACEN.WebAdmin.Controllers
 {
+    [Authorize]
     public class ClientesController : Controller
     {
         ClientesBL _clientesBL;

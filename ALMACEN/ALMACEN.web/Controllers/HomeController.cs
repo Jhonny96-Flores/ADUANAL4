@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Almacen.BL;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -11,7 +13,11 @@ namespace ALMACEN.web.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var serviciosBL = new ServiciosBL();
+            var listaServicios = serviciosBL.ObtenerServiciosActivos();
+
+            ViewBag.adminWebsiteUrl = ConfigurationManager.AppSettings["adminWebsiteUrl"];
+            return View(listaServicios);
         }
     }
 }

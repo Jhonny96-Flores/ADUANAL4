@@ -34,6 +34,7 @@ namespace Almacen.BL
         public int ServicioId { get; set; }
         public Servicio Servicio { get; set; }
 
+        public string servicios { get; set; }
         public int Cantidad { get; set; }
         public int Estadia { get; set; }
         public string Espacio { get; set; }

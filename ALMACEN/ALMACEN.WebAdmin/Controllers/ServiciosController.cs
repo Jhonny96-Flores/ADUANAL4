@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace ALMACEN.WebAdmin.Controllers
 {
-     
+     [Authorize]
     public class ServiciosController : Controller
     {
         ServiciosBL _serviciosBL;

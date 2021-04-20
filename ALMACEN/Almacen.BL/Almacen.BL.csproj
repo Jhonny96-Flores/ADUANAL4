@@ -57,11 +57,16 @@
     <Compile Include="Clientes.cs" />
     <Compile Include="ClientesBL.cs" />
     <Compile Include="Contexto.cs" />
+    <Compile Include="datosInicio.cs" />
+    <Compile Include="ReportedeVentas.cs" />
+    <Compile Include="ReportedeVentasBL.cs" />
+    <Compile Include="seguridadBL.cs" />
     <Compile Include="Servicio.cs" />
     <Compile Include="ServiciosBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolicitudAduana.cs" />
     <Compile Include="SolicitudAduanaBL.cs" />
+    <Compile Include="usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
