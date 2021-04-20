@@ -128,7 +128,7 @@
   <ItemGroup>
     <Content Include="assets\css\estilos.css" />
     <Content Include="assets\img\about-bg.jpg" />
-    <Content Include="assets\img\aduana.png" />
+    <Content Include="assets\img\aduanal_ogo.png" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\gallery\1.jpg" />
@@ -179,6 +179,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="forms\Readme.txt" />
     <Content Include="Global.asax" />
+    <Content Include="lib\lightbox\css\lightbox.css" />
+    <Content Include="lib\lightbox\css\lightbox.min.css" />
+    <Content Include="lib\lightbox\images\close.png" />
+    <Content Include="lib\lightbox\images\loading.gif" />
+    <Content Include="lib\lightbox\images\next.png" />
+    <Content Include="lib\lightbox\images\prev.png" />
+    <Content Include="lib\lightbox\js\lightbox.js" />
+    <Content Include="lib\lightbox\js\lightbox.min.js" />
+    <Content Include="lib\wow\wow.js" />
+    <Content Include="lib\wow\wow.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -286,6 +296,7 @@
     <Content Include="assets\vendor\bootstrap\js\bootstrap.js.map" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="forms\contact.php" />
+    <Content Include="lib\lightbox\links.php" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />

@@ -2,28 +2,38 @@
 @{
     ViewBag.Title = "Inicio";
 }
- <!-- ======= Schedule Section ======= -->
-<section id="schedule" class="section-with-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
+ <!-- ======= Servicio ======= -->
+<section>          
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Todo sobre nuestros</p>
             <h2>Servicios</h2>
-            <p>Todo Sobre Nuestros Servicios</p>
         </div>
-
-        <div class="row" >
+        <div class="row">
             @foreach (var servicio in Model)
             {
-            <div class="col-lg-4 col-md-6">
-        
-                   
-                     <img src="@(ViewBag.adminWebsiteUrl + servicio.UrlImagen)" alt="">
-                    <h3><a href="#">@servicio.Descripcion</a></h3>
-                    <p>@servicio.DetalleServicio</p>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="@(ViewBag.adminWebsiteUrl + servicio.UrlImagen)" alt="Image">
+                        <div class="service-overlay">
+                            <p>
+                                @servicio.DetalleServicio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>@servicio.Descripcion</h3>
+                        <a class="@(ViewBag.adminWebsiteUrl + servicio.UrlImagen)" data-lightbox="service">+</a>
+                    </div>
                 </div>
+            </div>
             }
         </div>
     </div>
-</section><!-- End Schedule Section -->
+</div>
+</section><!-- End Service -->
 
 <!-- ======= Gallery Section ======= -->
 <!-- ======= Contact Section ======= -->
