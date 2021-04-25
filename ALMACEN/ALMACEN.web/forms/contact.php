@@ -19,5 +19,5 @@ $para = 'lonny13z_g343g@fuluj.com';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+header("Location:Index.html");
 ?>
